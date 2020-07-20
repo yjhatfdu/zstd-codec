@@ -22,6 +22,6 @@ exports.run = (f) => {
         require('./zstd-codec-binding-wasm.js')(Module);
     }
     else {
-        require('./zstd-codec-binding.js')(Module);
+        throw "unsupport wasm"
     }
 };
